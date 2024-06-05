@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#nameDiv,
+#chatDiv {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#chatDiv {
+    display: none;
+}
+
+#greet {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+ul#chats {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+ul#chats li {
+    padding: 8px 10px;
+    margin: 5px 0;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+ul#chats li:nth-child(odd) {
+    background-color: #d1e7dd;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    width: 80px;
+    height: auto;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar-links a {
+    margin: 0 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+  }
+  
+  .navbar-links a:hover {
+    color: #fff;
+    background-color: #44ce62;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .navbar-logo {
+      width: 60px;
+    }
+  
+    .navbar-brand,
+    .navbar-links {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+    }
+  
+    .navbar-links a {
+      margin: 10px 0;
+    }
+  }

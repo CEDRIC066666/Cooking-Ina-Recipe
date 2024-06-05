@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ff.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Cooking Ina Recipe</title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-links">
+        <a href="ff.html">Home</a>
+        <a href="fff.html">About Us</a>
+        <a href="index.html">Vision VoyageE</a>
+        <a href="review.html">Review</a>
+    </div>
+</div>
+
+  <div class="container" style="margin-top: 80px;">
+    <div class="title-container">
+      <img src="logo.png" alt="Cooking Ina Logo" class="title-logo">
+      <h1>Welcome to Cooking Ina</h1>
+    </div>
+    <h4>We have plenty of dishes just for you.</h4>
+
+    <form>
+      <input type="text" id="search" placeholder="Search for recipes">
+      <button style="background-color:white; border-radius:20px; font-family:cursive; font-weight:bold; width:200px;">Search</button>
+    </form>
+
+    <div id="results"></div>
+    <h3>Recipes you may like:</h3>
+    <div id="random-recipes"></div>
+  </div>
+
+  
+  <div id="recipe-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <div id="modal-ingredients"></div>
+      <a id="modal-link" href="" target="_blank">Full Recipe</a>
+    </div>
+  </div>
+
+  <footer style="margin-top: 50px; padding: 20px; background-color: #ffffff; text-align: center;">
+    <p>Follow us on:</p>
+    <a href="https://www.facebook.com" target="_blank" style="margin-right: 15px;">
+      <i class="fab fa-facebook fa-2x"></i>
+    </a>
+    <a href="https://www.instagram.com" target="_blank" style="margin-right: 15px;">
+      <i class="fab fa-instagram fa-2x"></i>
+    </a>
+    <a href="https://www.youtube.com" target="_blank">
+      <i class="fab fa-youtube fa-2x"></i>
+    </a>
+  </footer>
+
+  <script src="recipe.js"></script>
+</body>
+</html>
