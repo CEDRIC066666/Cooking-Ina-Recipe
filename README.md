@@ -1,0 +1,1 @@
+Cooking fan can find plenty of recipes on COOKING INA, which offers a complete platform that allows different tastes, diets, and cooking skill levels. Users may search for specific recipes, explore through categories, and obtain ingredient lists and full directions using its user-friendly interface. We used api.edamam.com as our api for the recipes
